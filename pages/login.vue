@@ -4,7 +4,7 @@
     <hr />
     <div>
       <label>Usuário</label>
-      <input v-model="login.email" type="text" />
+      <input v-model="login.email" type="text" placeholder="Usuário" />
     </div>
     <div>
       <label>Senha</label>
