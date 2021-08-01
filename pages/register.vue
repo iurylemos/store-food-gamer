@@ -1,19 +1,29 @@
 <template>
   <div class="flex h-screen items-center ">
     <div
-      class="tela flex w-full max-w-3xl mx-auto rounded-lg shadow-xl content-center"
+      class="tela flex w-full max-w-3xl mx-auto rounded-xl shadow-xl content-center"
     >
-      <div
-        class="esquerda xl:block rounded-l-lg bg-cover bg-center w-1/2"
-        style="background-image: url('logo.png')"
-      ></div>
-      <div class="direita h-full w-1/2 px-4 py-4 text-center">
+      <div class="esquerda h-full w-1/2  px-4 py-4 text-center">
         <form class="bg-white">
           <div class="p-3 pb-8 text-gray-700 text-center">
             <h1 class="text-gray-900 text-xl mb-2 font-bold">
               STORE FOOD GAMER
             </h1>
-            <p class="text-xl">Entre com sua conta</p>
+            <p class="text-xl">Crie sua conta</p>
+          </div>
+          <div class="mb-4">
+            <label
+              class="block text-left ml-8 text-gray-700 font-bold mb-2"
+              for="nome"
+              >Nome</label
+            >
+            <input
+              class="w-4/5 shadow-inner appearance-none border rounded py-2 px-3 bg-gray-200 text-gray-700 leading-normal focus:outline-none focus:shadow-outline focus:border-yellow-500"
+              id="nome"
+              type="text"
+              required
+              placeholder="Digite seu nome..."
+            />
           </div>
           <div class="mb-4">
             <label
@@ -23,7 +33,7 @@
             >
             <input
               class="w-4/5 shadow-inner appearance-none border rounded py-2 px-3 bg-gray-200 text-gray-700 leading-normal focus:outline-none focus:shadow-outline focus:border-yellow-500"
-              id="e-mail"
+              id="nome"
               type="email"
               required
               placeholder="Digite seu e-mail..."
@@ -43,16 +53,10 @@
               placeholder="Digite sua senha..."
             />
             <div class="links justify-between">
-              <a
-                class="align-baseline font-bold text-xs text-blue-500 hover:text-blue-800"
-                href="#"
-                >Esqueci minha senha</a
-              >
-              <span>|</span>
               <nuxt-link
                 class="align-baseline font-bold text-xs text-blue-500 hover:text-blue-800"
-                to="/register"
-                >Registre-se</nuxt-link
+                to="/login"
+                >Já tem uma conta? Faça login</nuxt-link
               >
             </div>
           </div>
@@ -66,36 +70,19 @@
           </div>
         </form>
       </div>
+
+      <div
+        class="direita xl:block rounded-r-lg bg-cover bg-center w-1/2"
+        style="background-image: url('logo2.png')"
+      ></div>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      login: {
-        email: "",
-        password: ""
-      }
-    };
-  },
-  methods: {
-    loginUser() {
-      this.$auth
-        .loginWith("local", {
-          data: this.login
-        })
-        .then(auth => {
-          console.log("sucesso auth", auth);
-        })
-        .catch(err => {
-          console.log("error", err);
-        });
-    }
-  }
-};
+export default {};
 </script>
+
 <style scoped>
 @media (max-width: 888px) {
   .tela {
