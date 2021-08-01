@@ -1,13 +1,13 @@
 <template>
   <div class="flex h-screen items-center ">
     <div
-      class="tela flex h-1/2 w-full max-w-3xl mx-auto rounded-lg shadow-xl content-center"
+      class="tela flex w-full max-w-3xl mx-auto rounded-lg shadow-xl content-center"
     >
       <div
         class="esquerda xl:block bg-cover bg-center w-1/2"
         style="background-image: url('logo.png')"
       ></div>
-      <div class="direita w-full xl:w-1/2 px-4 py-4 text-center">
+      <div class="direita h-full w-full xl:w-1/2 px-4 py-4 text-center">
         <form class="bg-white">
           <div class="p-3 pb-8 text-gray-700 text-center">
             <h1 class="text-gray-900 text-xl mb-2 font-bold">
@@ -42,14 +42,22 @@
               required
               placeholder="Digite sua senha..."
             />
-            <a
-              class="block align-baseline font-bold text-xs text-blue-500 hover:text-blue-800"
-              href="#"
-              >Esqueci minha senha</a
-            >
+            <div class="links justify-between">
+              <a
+                class="align-baseline font-bold text-xs text-blue-500 hover:text-blue-800"
+                href="#"
+                >Esqueci minha senha</a
+              >
+              <span>|</span>
+              <a
+                class="align-baseline font-bold text-xs text-blue-500 hover:text-blue-800"
+                href="#"
+                >Registre-se</a
+              >
+            </div>
           </div>
 
-          <div class="flex w-full items-center justify-center">
+          <div class="flex w-full items-center justify-center sm:mb-2">
             <button
               class="w-64 bg-white  text-gray-800 font-bold rounded border-b-2 border-green-500 hover:border-green-600 hover:bg-green-500 hover:text-white shadow-md py-2"
             >
@@ -93,6 +101,7 @@ export default {
   .tela {
     flex-direction: column;
     align-items: center;
+    height: 100rem;
   }
   .esquerda {
     width: 100%;
