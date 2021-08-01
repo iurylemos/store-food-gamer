@@ -1,28 +1,27 @@
 <template>
   <div>
-    <HeaderIndex />
-    <AboutCompanyIndex />
-    <OurTeamIndex />
-    <FeedbackIndex />
-    <FooterIndex />
+    <Header />
+    <AboutCompany />
+    <OurTeam />
+    <Feedback />
+    <Footer />
   </div>
 </template>
 
 <script>
+import Header from "../components/Main/Header.vue";
+import AboutCompany from "../components/Main/AboutCompany.vue";
+import OurTeam from "../components/Main/OurTeam.vue";
+import Feedback from "../components/Main/Feedback.vue";
+import Footer from "../components/Main/Footer.vue";
+
 export default {
-  data() {
-    return {
-      developers: [
-        {
-          name: "Iury Lemos",
-          office: "Software Developer"
-        },
-        {
-          name: "Venicius",
-          office: "Software Developer"
-        }
-      ]
-    };
+  components: {
+    Header,
+    AboutCompany,
+    OurTeam,
+    Feedback,
+    Footer
   }
 };
 </script>

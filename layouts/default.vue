@@ -10,7 +10,7 @@ h1 {
 }
 
 .botao-primario {
-  @apply bg-green-600 text-white p-3;
+  @apply bg-green-600 text-white p-2 rounded-lg;
 }
 
 .botao-secundario {

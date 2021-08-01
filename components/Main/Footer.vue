@@ -11,7 +11,7 @@
             type="text"
           />
           <button
-            class="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded"
+            class="inline-flex text-white bg-green-400 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded"
           >
             Enviar
           </button>
