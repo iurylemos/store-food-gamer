@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-gray-200 fixed inset-0 flex content-center">
-    <Nuxt class="bg-white m-auto p-10 space-y-6 border rounded shadow-lg" />
+  <div class="bg-gray-200 inset-0">
+    <Nuxt class="bg-white space-y-6 border rounded shadow-lg" />
   </div>
 </template>
 
