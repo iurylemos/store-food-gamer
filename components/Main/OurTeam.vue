@@ -52,6 +52,10 @@ export default {
         {
           name: "Venicius",
           office: "Software Developer"
+        },
+        {
+          name: "Ian Oliveira",
+          office: "Software Developer"
         }
       ]
     };

@@ -17,10 +17,10 @@
           de gamers
         </p>
         <span
-          class="inline-block h-1 w-10 rounded bg-yellow-500 mt-8 mb-6"
+          class="inline-block h-1 w-10 rounded bg-green-400 mt-8 mb-6"
         ></span>
         <h2 class="text-gray-900 font-medium title-font tracking-wider text-sm">
-          VENICIUS & IURY
+          VENICIUS & IURY & IAN
         </h2>
         <p class="text-gray-500">Criadores do projeto</p>
       </div>

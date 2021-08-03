@@ -33,7 +33,7 @@
           placeholder="Message"
         ></textarea>
         <button
-          class="text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg"
+          class="text-white bg-green-400 border-0 py-2 px-6 focus:outline-none hover:bg-green-500 rounded text-lg"
         >
           Enviar
         </button>
