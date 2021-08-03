@@ -6,11 +6,11 @@
 
 <style>
 h1 {
-  @apply text-3xl font-semibold text-green-600;
+  @apply text-3xl font-semibold text-yellow-400;
 }
 
 .botao-primario {
-  @apply bg-green-600 text-white p-2 rounded-lg;
+  @apply bg-purple-800 text-white p-2 rounded-lg;
 }
 
 .botao-secundario {
