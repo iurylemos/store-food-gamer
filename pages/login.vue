@@ -58,7 +58,7 @@
               <span class="mx-2">|</span>
               <nuxt-link
                 class="align-baseline font-bold text-xs text-blue-500 hover:text-blue-800"
-                to="/register"
+                to="/cadastro"
                 >Registre-se</nuxt-link
               >
             </div>
