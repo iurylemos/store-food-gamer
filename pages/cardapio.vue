@@ -244,7 +244,7 @@
 </style>
 
 <script>
-import Header from "../components/Main/Header.vue";
+import Header from "../components/Header";
 
 export default {
   components: {
